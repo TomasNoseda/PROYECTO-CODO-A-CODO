@@ -8,40 +8,85 @@
         font-family: 'Bree Serif', serif;
         font-size: 15px;
  }
+
+
+
+
+ /* HEADER */
+
+#quienes-somos{
+    color:#f0d5e8;
+}
+
+ .nav-link{
+    font-size: 18px;
+    color: #f0d5e8;
+ }
+ 
+
+ .navbar-brand{
+    margin-right: 50px;
+   
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+#navbarNavDropdown{
+    background-color: #6d2469;
     
+}
+
+#navbar{
+    background-color: #6d2469;
+    height: 110px;
+}
+
+#header{
+    background-color: #6d2469;
+}
+
+
+
+   
+/* BODY */
+
 body{
         background-color: #f0d5e8;
         overflow: auto  scroll;
  }
 
-nav{
-    list-style: none;
+
+/* TITULO-SERVICIOS */
+.contenedor-titulo-servicios{
+    margin: 50px 0px;    
     
+    }
+    
+ .titulo-servicios{
+  text-align: center;
+  color: #6d2469;
+    }
+
+ /* CONTENEDOR DE TARJETAS */
+
+ #container-tarjetas{
+    margin-top: 20px;
+ }
+
+.card-link{
+    text-decoration: none;
+    color: rgb(121, 16, 105);
+}
+
+.card-title{
+    color: rgb(121, 16, 105);0;
 }
   
 .logodiv{
     margin-left: 30px;
 }
-header{
-        background-color: #6d2469;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        height: 85px;
-        padding: 5px 2%;
-        margin-bottom: 25px;
-        
-}
-   
-
-.logo{
-        
-        cursor: pointer;
-        width: 300px;
-        height: 80px;      
-        
-}
-
  
 
 li{
@@ -50,34 +95,22 @@ li{
     
 }
 
-.nav-opciones {
-    text-decoration: none;
-    color: white;
-    /* font-weight: 400;
-    color: #6d2469;
-    padding: 9px 15px;
-    background: #f0d5e8;
-    border: none;
-    border-radius: 50px; */
-    cursor: pointer;
-    margin-left: 25px;
-}
-
-.contactos{
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-weight: 400;
-    color: #6d2469;
-    padding: 8px 25px;
-    background: #f0d5e8;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    margin-left: 30px;
-    margin-bottom: 10px;
+.contenedor-titulo-ofertas{
+margin: 50px 0px;    
 
 }
+
+.titulo-ofertas{
+    text-align: center;
+    color: #6d2469;
+}
+
+
+/* CARRUSEL */
+
+
+/* FOOTER */
+
 
 .logodiv{
     margin-right: 200px;
@@ -88,7 +121,7 @@ li{
 }
 
 footer{
-    margin-top: 550px;
+    margin-top: 50px;
     background-color: #6d2469;
     height: auto;
     padding: 20px 0;
@@ -96,7 +129,7 @@ footer{
 
 .isocial{
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
 .icono{
@@ -139,12 +172,14 @@ footer{
 
 .li-footer{
     display: inline-block;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 .copyright{
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 0;
     text-align: center;
     color: rgb(192, 188, 183);
     opacity: 0.2;
 }
+
 
