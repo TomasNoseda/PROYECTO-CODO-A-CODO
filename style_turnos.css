@@ -183,4 +183,13 @@ footer{
 }
 
 
-                        
+                               /* CONTENEDOR DE TARJETAS DE OFERTAS */
+#container-ofertas{
+margin-left: 100px;
+margin-bottom: 50px;
+}
+    
+.btn{
+    background-color: #6d2469;
+}
+ 
