@@ -43,14 +43,16 @@ let total = (categoria, tipoServicio, div) => {
     }
   
     if (categoria === "3") {
-      totalConDescuento = tipoServicio * 0.80;
+        totalConDescuento = tipoServicio * 0.80;
     }
-  
+    
     div.textContent = `Total a pagar: $ ${totalConDescuento}`;
-  
+    
     return totalConDescuento;
-  };
-  
+};
+
+// EVENTOS
+
   select.addEventListener("change", (e) => {
     if (e.target.value === "Seleccione categoria") {
       divTotal.textContent = "Total a pagar: $";
@@ -67,48 +69,7 @@ let total = (categoria, tipoServicio, div) => {
 });
   
 
+btn_borrar.addEventListener('click',()=>{divTotal.textContent = "Total a pagar: $";});
 
-// let emptyInput = (input) => {
-//   if (input.value === "") {
-//     input.style.borderColor = "red";
-//     return true;
-//   } else {
-//     input.style.borderColor = "green";
-//   }
-// };
-
-// select.addEventListener("change", (e) => {
-//   if (e.target.value === "Seleccione categoria") {
-//     divTotal.textContent = "Total a pagar: $";
-//   }
-//   total(cantidad.value, e.target.value, divTotal);
-// });
-
-// cantidad.addEventListener("input", (e) => {
-//   total(cantidad.value, select.value, divTotal);
-// });
-
-// resume.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   if (
-//     !emptyInput(name) &&
-//     !emptyInput(surname) &&
-//     !emptyInput(email) &&
-//     !emptyInput(cantidad)
-//   ) {
-//     Swal.fire({
-//       icon: "success",
-//       title: "Gracias por realizar tu compra",
-//       html: `<p>${name.value} ${surname.value}</p>
-//       <p>Hemos enviado la informacion a: ${email.value}</p>
-//       <p>${divTotal.textContent}</p>`,
-//       confirmButtonText: "Continuar",
-//     }).then((result) => {
-//       if (result.isConfirmed) {
-//         window.location.href = "./index.html";
-//       }
-//     });
-//   }
-// });
-
+btn_solicitar_turno.addEventListener('click',()=>{alert('Su Turno se ha registrado correctamente, en breve nos estaremos comunicando con usted')})
 
